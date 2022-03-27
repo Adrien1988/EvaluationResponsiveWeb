@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* je voudrais ajouter une animation quand je survole les li au niveau des chevrons qui se trouve dans la ligne 112 main>section:first-child>article:nth-child(2)>ul>li>a>span, pour qu'ils se décallent vers la droite au moment du survole */
+
+main>section:first-child {
+  position: relative;
+  width: 960px;
+  padding: 10px 10px;
+  margin: 20px auto;
+}
+
+
+main>section:first-child>article:first-child>div>a {
+  text-decoration: none;
+  color: var(--noir);
+  padding: 0 3px;
+}
+
+main>section:first-child>article:first-child>div>a::after {
+  content: ">";
+  padding-left: 8px;
+}
+
+main>section:first-child>article:first-child>div:first-child>span,
+main>section:first-child>article:first-child>div:nth-child(2) {
+  font-weight: 600;
+}
+
+main>section:first-child>article:first-child {
+  display: flex;
+  margin: 24px 0 10px;
+  line-height: 14px;
+}
+
+main>section:first-child>article:first-child>div:nth-child(2) {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+main>section:first-child>article:first-child>div:nth-child(2)>p>span {
+  color: var(--rose);
+} 
+
+main>section:first-child>article:nth-child(2) {
+  background-image: url(../images/matelas.png);
+  background-size: cover;
+  width: 940px;
+  height: 500px;
+  position: relative;
+  border: 1px solid var(--beige);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+main>section:first-child>article:nth-child(2)>div>a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
+
+main>section:first-child>article:nth-child(2)>div>p {
+  left: 10px;
+  position: absolute;
+  top: 5px;
+  color: var(--rose);
+  font-weight: var(--gras);
+  font-size: 25px;
+}
+
+main>section:first-child>article:nth-child(2)>ul {
+  width: 35%;
+  margin-left: 60%;
+  padding: 5px 0;
+  position: relative;
+  background: var(--beige);
+  list-style: none;
+}
+
+main>section:first-child>article:nth-child(2)>ul>img {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--gris);
+  margin: 0px;
+}
+
+main>section:first-child>article:nth-child(2)>ul>li {
+  margin: 0 15px;
+  border-bottom: 1px solid var(--gris);
+}
+
+main>section:first-child>article:nth-child(2)>ul>li>a {
+  text-decoration: none;
+  color: var(--noir);
+  display: block;
+  padding: 10px 0;
+  width: 230px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+main>section:first-child>article:nth-child(2)>ul>li>a:hover {
+  color:var(--rose);
+}
+
+main>section:first-child>article:nth-child(2)>ul>li>a>span {
+  font-size: 25px;
+  margin-top: -8px;
+  position: absolute;
+  right: 25px;
+  color: var(--rose);
+}
+
+main>section:first-child>article:nth-child(2)>ul>li:last-child {
+  border: 0;
+}
+
+#tous_produits {
+  color: var(--rose);
+}
+
+main>section:first-child>article:last-child {
+  margin: 20px 10px 0;
+}
+
+main>section:first-child>article:last-child>h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main>section:first-child>article:last-child>p {
+  line-height: 18px;
+}
+
+main>section:last-child {
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--noir);
+
+}
+
+main>section:last-child>div {
+  width: 443px;
+  height: 30px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  border-bottom: 1px solid var(--gris);
+  border-color: var(--rose);
+}
+
+main>section:last-child>div>h3 {
+  padding: 16px;
+  width: fit-content;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--rose);
+  background-color: var(--blanc);
+}
+
+
+main>section:last-child>article {
+  display: inline-block;
+  position: relative;
+  overflow:visible;
+  width: 145px;
+  margin: 0 24px;
+  vertical-align: top;
+}
+
+main>section:last-child>article>a {
+  width: 174px;
+  height: 217px;
+  overflow: hidden;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid var(--gris);
+}
+
+main>section:last-child>article>a>img {
+  display: block;
+  line-height: 218px;
+  max-width: 100%;
+  text-align: center;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+}
+
+main>section:last-child>article>p {
+  max-width: 144px;
+  height: 50px;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+}
+
+main>section:last-child>article>div {
+margin-top: 5px;
+display: flex;
+align-items: center;
+white-space: nowrap;
+height: 35px;
+}
+
+main>section:last-child>article>div>div:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--rose);
+}
+
+main>section:last-child>article>div>div:first-child::after {
+  content: '';
+}
+
+main>section:last-child>article>div>div:nth-child(2) {
+  color: var(--gris);
+  text-decoration: line-through;
+  left: 40px;
+  text-align: center;
+  font-size: 11px;
+}
+
+main>section:last-child>article>div>div:last-child {
+  background: var(--beige);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+main>section:last-child>article>button>a {
+  text-decoration: none;
+display: block;
+font-size: 12px;
+margin: 20px auto 6px auto;
+position: relative;
+z-index:10;
+color: var(--rose);
+background: var(--blanc);
+line-height: 1;
+text-align: center;
+border: 1px solid var(--rose);
+transition: all .3s ease-in-out;
+padding: 12px 16px;
+border-radius: 1000px;
+cursor: pointer;
+}
+
+/* pour le bouton ajouter au panier je voudrais pouvoir ajouter une animation qui permet de voir au moment du survole un encart avec la possibilité de sélectioner une quantité */
